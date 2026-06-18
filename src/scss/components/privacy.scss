@@ -1,0 +1,100 @@
+.policy-section {
+  background: #f2f2ff;
+  padding-top: 140px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: #141428;
+  margin-bottom: 64px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #141428;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #141428;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #141428;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #565656;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #565656;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  word-break: break-all;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section span {
+  @include media(desktop) {
+  }
+}

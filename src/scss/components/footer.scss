@@ -1,0 +1,133 @@
+.footer {
+  background: #1b0301;
+  padding-top: 48px;
+  padding-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-container {
+  @include media(desktop) {
+  }
+}
+
+.footer-top-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 48px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 72px;
+  }
+}
+
+.footer-links-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    align-items: start;
+  }
+}
+
+.footer-logo-link {
+  @include media(desktop) {
+  }
+}
+
+.footer-logo-img {
+  @include media(desktop) {
+  }
+}
+
+.footer-email-link {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  color: #f6f6ff;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-nav {
+  @include media(desktop) {
+  }
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-list-item {
+  &:first-child {
+    position: relative;
+
+    &::after {
+      content: '|';
+      font-family: 'Fredoka', sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.28571;
+      text-align: center;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -16px;
+    }
+  }
+
+  @include media(desktop) {
+    &:first-child {
+      &::after {
+        font-size: 18px;
+        line-height: 1.33333;
+      }
+    }
+  }
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  text-align: center;
+  color: #fff;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+}
+
+.footer-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14286;
+  text-align: center;
+  color: #f6f6ff;
+
+  @include media(desktop) {
+  }
+}

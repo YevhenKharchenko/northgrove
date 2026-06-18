@@ -1,0 +1,65 @@
+.gameplay-section {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-section-wrapper {
+  padding-top: 123px;
+  padding-bottom: 123px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image:
+    url(../img/gameplay/gameplay-bg2-mob.png),
+    url(../img/gameplay/gameplay-bg1-mob.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    bottom 48px center,
+    bottom center;
+  background-size: auto, auto;
+
+  @include media(desktop) {
+    padding-top: 273px;
+    padding-bottom: 273px;
+    max-width: 1440px;
+    background-image:
+      url(../img/gameplay/gameplay-bg2-desk.png),
+      url(../img/gameplay/gameplay-bg1-desk.png);
+    background-position:
+      bottom 171px center,
+      bottom center;
+  }
+}
+
+.gameplay-container {
+  @include media(desktop) {
+  }
+}
+
+.gameplay-text-wrapper {
+  max-width: 302px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 550px;
+  }
+}
+
+.gameplay-title {
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-text {
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f6f6ff;
+
+  @include media(desktop) {
+  }
+}

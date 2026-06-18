@@ -1,0 +1,100 @@
+.features-section {
+  @include media(desktop) {
+  }
+}
+
+.features-bg-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    max-width: 1440px;
+  }
+}
+
+.features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-title {
+  @include media(desktop) {
+    margin-bottom: 64px;
+  }
+}
+
+.features-swiper-container {
+  max-width: 318px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.features-swiper-container.show {
+  visibility: visible;
+}
+
+.features-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.features-slide {
+  background: rgba(51, 6, 2, 0.16);
+  border: 1px solid rgba(244, 159, 1, 0.24);
+  padding: 23px 21px 27px 21px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  max-width: 318px;
+  min-height: 378px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-img {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-item-title {
+  font-family: 'Cinzel Decorative', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f6f6ff;
+  margin-bottom: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-item-text {
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #f6f6ff;
+
+  @include media(desktop) {
+  }
+}
