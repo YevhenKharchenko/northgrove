@@ -4,30 +4,16 @@
 }
 
 .gameplay-section-wrapper {
-  padding-top: 123px;
-  padding-bottom: 123px;
+  padding-top: 48px;
+  padding-bottom: 48px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image:
-    url(../img/gameplay/gameplay-bg2-mob.png),
-    url(../img/gameplay/gameplay-bg1-mob.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position:
-    bottom 48px center,
-    bottom center;
-  background-size: auto, auto;
 
   @include media(desktop) {
-    padding-top: 273px;
-    padding-bottom: 273px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     max-width: 1440px;
-    background-image:
-      url(../img/gameplay/gameplay-bg2-desk.png),
-      url(../img/gameplay/gameplay-bg1-desk.png);
-    background-position:
-      bottom 171px center,
-      bottom center;
   }
 }
 
@@ -36,29 +22,100 @@
   }
 }
 
-.gameplay-text-wrapper {
-  max-width: 302px;
-  margin-left: auto;
-  margin-right: auto;
+.gameplay-subtitle {
+  margin-bottom: 8px;
 
   @include media(desktop) {
-    max-width: 550px;
   }
 }
 
-.gameplay-title {
-  margin-bottom: 12px;
+.gameplay-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
 
   @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 84px;
   }
 }
 
 .gameplay-text {
-  font-family: 'Lora', sans-serif;
+  background: #6b2e10;
+  border-radius: 8px;
+  padding: 8px;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #f6f6ff;
+  color: #f6e6bc;
+
+  @include media(desktop) {
+    padding: 12px;
+    max-width: 386px;
+  }
+}
+
+.gameplay-list-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: center;
+  color: #f6e6bc;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.gameplay-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.gameplay-list-item {
+  min-height: 130px;
+  width: 100%;
+  max-width: 241px;
+  position: relative;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-item-text {
+  border: 1px solid #578130;
+  border-radius: 8px;
+  padding: 12px 8px 24px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22222;
+  text-align: center;
+  color: #f6e6bc;
+  min-height: 80px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   @include media(desktop) {
   }

@@ -11,13 +11,9 @@
   max-width: 375px;
 
   @include media(desktop) {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     max-width: 1440px;
-    background-image: url(../img/about/about-bg-desk.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    background-size: auto;
   }
 }
 
@@ -29,38 +25,33 @@
 .about-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 
   @include media(desktop) {
-    flex-direction: row-reverse;
-    justify-content: start;
+    flex-direction: row;
     align-items: center;
-    gap: 72px;
+    gap: 82px;
   }
 }
 
-.about-text-wrapper {
+.about-subtitle {
   @include media(desktop) {
-    max-width: 526px;
-  }
-}
-
-.about-title {
-  margin-bottom: 12px;
-
-  @include media(desktop) {
-    text-align: left;
+    max-width: 631px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 56px;
   }
 }
 
 .about-text {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #f6f6ff;
+  color: #f6e6bc;
 
   @include media(desktop) {
+    max-width: 460px;
   }
 }
 
@@ -69,7 +60,7 @@
   margin-right: auto;
 
   @include media(desktop) {
-    min-width: 636px;
+    min-width: 608px;
     margin: 0;
   }
 }

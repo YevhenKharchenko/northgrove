@@ -1,5 +1,5 @@
 .header {
-  background: transparent;
+  background: #56200b;
   padding: 6px 0;
   position: fixed;
   width: 100%;
@@ -8,6 +8,13 @@
 
   @include media(desktop) {
     padding: 12px 0;
+  }
+}
+
+.header-transparent {
+  background: transparent;
+
+  @include media(desktop) {
   }
 }
 

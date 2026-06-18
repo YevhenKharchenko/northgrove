@@ -12,12 +12,8 @@
 
   @include media(desktop) {
     padding-top: 100px;
-    padding-bottom: 0;
+    padding-bottom: 100px;
     max-width: 1440px;
-    background-image: url(../img/faq/faq-bg-desk.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: auto;
   }
 }
 
@@ -26,9 +22,10 @@
   }
 }
 
-.faq-title {
+.faq-subtitle {
+  margin-bottom: 48px;
+
   @include media(desktop) {
-    margin-bottom: 48px;
   }
 }
 
@@ -44,22 +41,21 @@
 }
 
 .faq-list-item {
+  background: #6b2e10;
+  border-radius: 8px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   width: 100%;
 
   @include media(desktop) {
-    max-width: 697px;
+    padding: 20px 32px;
+    max-width: 713px;
   }
 }
 
 .faq-item-question-wrapper {
-  padding: 0 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.24);
-  padding-top: 12px;
-  padding-bottom: 11px;
-
   @include media(desktop) {
   }
 }
@@ -67,11 +63,8 @@
 .faq-item-answer-wrapper {
   max-height: 0;
   overflow: hidden;
-  transition:
-    height 0.3s ease-in-out,
-    opacity 0.3s ease-in-out,
-    padding 0.3s ease-in-out;
   opacity: 0;
+  transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
   }
@@ -81,6 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
   width: 100%;
 
   @include media(desktop) {
@@ -99,12 +93,11 @@
 }
 
 .faq-btn-text {
-  font-family: 'Cinzel Decorative', sans-serif;
-  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0em;
-  color: #f6f6ff;
+  line-height: 1.7;
+  color: #fffffd;
   text-align: left;
 
   @include media(desktop) {
@@ -112,47 +105,31 @@
 }
 
 .faq-bottom-text {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
-  color: #f6f6ff;
+  line-height: 1.5;
+  color: #f6e6bc;
 
   @include media(desktop) {
   }
 }
 
 .is-visible {
-  max-height: 500px;
-  opacity: 1;
-
   @include media(desktop) {
     max-height: 100px;
   }
 }
 
 .faq-list-item.faq-open .faq-toggle-symbol {
-  transform: rotate(180deg);
+  transform: rotate(-90deg);
 }
 
 .faq-list-item.faq-open .faq-item-answer-wrapper {
-  padding-top: 11px;
-  padding-left: 12px;
-  padding-right: 12px;
-  opacity: 1;
+  margin-top: 8px;
   max-height: 500px;
+  opacity: 1;
 
   @include media(desktop) {
-  }
-}
-
-.faq-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
   }
 }

@@ -1,9 +1,6 @@
 import Swiper from 'swiper';
 import 'swiper/css/bundle';
 
-const featuresLeftArrow = document.getElementById('featuresLeftArrow');
-const featuresRightArrow = document.getElementById('featuresRightArrow');
-
 let featuresSwiper;
 
 featuresSwiper = new Swiper('.features-swiper-container', {
@@ -13,13 +10,13 @@ featuresSwiper = new Swiper('.features-swiper-container', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   initialSlide: 0,
-  spaceBetween: 8,
+  spaceBetween: 16,
   speed: 500,
   allowTouchMove: true,
   grabCursor: true,
   breakpoints: {
     1440: {
-      slidesPerView: 4,
+      slidesPerView: 8,
       spaceBetween: 0,
       centeredSlides: false,
       allowTouchMove: false,

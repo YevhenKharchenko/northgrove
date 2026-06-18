@@ -47,6 +47,24 @@ function onOutsideMenuClick(e) {
   }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+  const isHome =
+    window.location.pathname === '/' ||
+    window.location.pathname === '/northgrove/' ||
+    window.location.pathname.endsWith('/index.html');
+
+  if (!isHome) return;
+
+  if (!header) return;
+
+  function toggleHeader() {
+    header.classList.toggle('header-transparent', window.scrollY === 0);
+  }
+
+  toggleHeader();
+  window.addEventListener('scroll', toggleHeader);
+});
+
 const navLinks = document.querySelectorAll('.nav-list-link');
 const sectionIds = Array.from(navLinks).map(link =>
   link.getAttribute('href').replace('./index.html#', '')

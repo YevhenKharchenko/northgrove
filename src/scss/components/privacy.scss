@@ -1,5 +1,5 @@
 .policy-section {
-  background: #f2f2ff;
+  background: #f4f6ff;
   padding-top: 140px;
   padding-bottom: 40px;
 
@@ -9,10 +9,9 @@
 
 .policy-section h1 {
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 40px;
   line-height: 1.2;
-  letter-spacing: 0em;
   color: #141428;
   margin-bottom: 64px;
 
@@ -22,10 +21,9 @@
 
 .policy-section h2 {
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.01em;
   color: #141428;
   margin-bottom: 16px;
 
@@ -35,10 +33,9 @@
 
 .policy-section h3 {
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.01em;
   color: #141428;
   margin-bottom: 16px;
 
@@ -48,10 +45,21 @@
 
 .policy-section h4 {
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.01em;
+  color: #141428;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.policy-section h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
   color: #141428;
   margin-bottom: 16px;
 
@@ -64,8 +72,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.01em;
-  color: #565656;
+  color: #484848;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -77,8 +84,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.01em;
-  color: #565656;
+  color: #484848;
   margin-bottom: 16px;
 
   @include media(desktop) {

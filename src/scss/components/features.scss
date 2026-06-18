@@ -5,15 +5,15 @@
 
 .features-bg-wrapper {
   padding-top: 48px;
-  padding-bottom: 48px;
+  padding-bottom: 80px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 
   @include media(desktop) {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 90px;
+    padding-bottom: 140px;
     max-width: 1440px;
   }
 }
@@ -23,14 +23,34 @@
   }
 }
 
-.features-title {
+.features-subtitle {
+  margin-bottom: 8px;
+
   @include media(desktop) {
-    margin-bottom: 64px;
+    max-width: 631px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.features-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fffffd;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    max-width: 477px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 74px;
   }
 }
 
 .features-swiper-container {
-  max-width: 318px;
+  max-width: 290px;
   margin-left: auto;
   margin-right: auto;
 
@@ -46,54 +66,41 @@
 .features-swiper-wrapper {
   @include media(desktop) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
   }
 }
 
 .features-slide {
-  background: rgba(51, 6, 2, 0.16);
-  border: 1px solid rgba(244, 159, 1, 0.24);
-  padding: 23px 21px 27px 21px;
+  background: linear-gradient(180deg, #2b2a78 0%, #4c2f8d 45.19%, #204c8f 100%);
+  border-radius: 8px;
+  padding: 24px 22px;
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  max-width: 318px;
-  min-height: 378px;
+  gap: 12px;
+  max-width: 290px;
+  min-height: 144px;
 
   @include media(desktop) {
+    width: 100% !important;
   }
 }
 
-.features-img {
-  margin-bottom: 16px;
-
-  @include media(desktop) {
-  }
-}
-
-.features-item-title {
-  font-family: 'Cinzel Decorative', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #f6f6ff;
-  margin-bottom: 4px;
-
+.features-icon {
   @include media(desktop) {
   }
 }
 
 .features-item-text {
-  font-family: 'Lora', sans-serif;
+  font-family: 'Fredoka One', sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.3;
   text-align: center;
-  color: #f6f6ff;
+  color: #fffffd;
 
   @include media(desktop) {
   }
