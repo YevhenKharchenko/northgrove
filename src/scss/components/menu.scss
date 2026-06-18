@@ -1,5 +1,5 @@
 .context-menu {
-  background: #5d0503;
+  background: #56200b;
   display: none;
   justify-content: center;
   align-items: center;
@@ -29,15 +29,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 }
 
 .context-list-link {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.25;
-  color: #f6f6ff;
+  line-height: 1.5;
+  color: #fffffd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,15 +46,7 @@
     border-color 0.3s ease-in-out;
 
   &:active {
-    color: #f49f01;
   }
-}
-
-.context-cta-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
 }
 
 .is-open {

@@ -17,17 +17,11 @@
 }
 
 .nav {
-  background: rgba(51, 6, 2, 0.9);
-  border: 1px solid rgba(255, 255, 255, 0.24);
-  border-radius: 50px;
-  padding: 11px 23px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   @include media(desktop) {
-    padding: 15px 23px;
-    justify-content: start;
   }
 }
 
@@ -46,11 +40,11 @@
 
   @include media(desktop) {
     display: inline;
-    font-family: 'Cinzel Decorative', sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1;
-    color: #f6f6ff;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.1875;
+    color: #fffffd;
   }
 }
 
@@ -60,17 +54,16 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-left: auto;
+    gap: 24px;
   }
 }
 
 .nav-list-link {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 700;
   font-size: 16px;
-  line-height: 1.25;
-  color: #f6f6ff;
+  line-height: 1.5;
+  color: #fffffd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,17 +75,6 @@
   &:focus,
   &:active,
   &.active {
-    color: #f49f01;
-  }
-}
-
-.header-cta-link {
-  display: none;
-
-  @include media(desktop) {
-    display: flex;
-    align-items: center;
-    margin-left: 12px;
   }
 }
 
