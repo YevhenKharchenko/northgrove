@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grove Plot — Cozy Garden Match-3 Puzzle Adventure</title>
+    <meta
+      name="description"
+      content="Play Grove Plot, a relaxing match-3 puzzle game filled with fruits, flowers, scenic paths, and satisfying combo effects in a charming garden world."
+    />
+    <link rel="canonical" href="https://northgrove.pro/" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="/northgrove/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Nunito+Sans:opsz,wght@6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    
+    <script type="module" crossorigin src="/northgrove/commonHelpers3.js"></script>
+    <link rel="modulepreload" crossorigin href="/northgrove/assets/header-f2700439.js">
+    <link rel="modulepreload" crossorigin href="/northgrove/assets/vendor-89c56180.js">
+    <link rel="stylesheet" href="/northgrove/assets/header-2ccebdf2.css">
+    <link rel="stylesheet" href="/northgrove/assets/vendor-fb046256.css">
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header-container">
+    <nav class="nav">
+      <a class="header-logo-link" href="./">
+        <img
+          class="header-logo-img"
+          src="/northgrove/assets/header-logo-9eebbe16.png"
+          alt="Logo"
+          width="40"
+          height="40"
+        />
+        <span class="header-logo-text">Grove Plot</span></a
+      >
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#about">About</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#gameplay">Gameplay</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#locations">Journey</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#features">Features</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+      </ul>
+      <button class="nav-btn" type="button" aria-label="Open mobile menu">
+        <svg class="menu-icon" width="24" height="24">
+          <use href="/northgrove/assets/sprite-f8102b43.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button class="close-btn" type="button" aria-label="Close mobile menu">
+        <svg class="close-icon" width="24" height="24">
+          <use href="/northgrove/assets/sprite-f8102b43.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+    <div class="context-menu">
+  <div class="container context-container">
+    <nav class="context-nav">
+      <ul class="context-nav-list">
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#home">Home</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#about">About</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#gameplay">Gameplay</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#locations">Journey</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#features">Features</a>
+        </li>
+        <li class="context-list-item">
+          <a class="context-list-link" href="./index.html#faq">FAQ</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <main>
+      <section class="section hero-section" id="home">
+  <div class="hero-bg-wrapper">
+    <div class="container hero-container">
+      <div class="hero-content-wrapper">
+        <div class="hero-text-wrapper">
+          <h1 class="hero-main-title">
+            Grove Plot — A Softer Kind of Puzzle Adventure
+          </h1>
+          <a
+            class="hero-cta-link"
+            href="https://play.google.com/store/apps/details?id=inc.series.twimly2&hl=en&gl=us"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download on Google Play"
+            >Play Now</a
+          >
+        </div>
+        <div class="hero-bottom-wrapper">
+          <ul class="hero-list">
+            <li class="hero-list-item">
+              <p class="hero-item-text">Version 1.0.3.3</p>
+              <img
+                class="hero-star-img"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAgBJREFUeAHtU81PE0EcfdOv7baFpUTRelE0GCXGEEnUxkQ5+w949MZJo1dPxoM3NcSD6EGv3r1w8GakZI1epKEEQggQoOFz2Xa72e7uDLOlH8OWLpwJ7zTzm3lv3u/NDHCGAISmnedscQFspnydevMTkYIWfxafjEXtv2BxQDLnSF6/4/AywTEI3FCoPmSx9SlAtpsWLPmePphUe/iMdeJFOi18+5N9FKIMIWqDCnXJVLsLRr8LZ7u8ZUTViJz8nU0vv+VLTqDTzDASE+obXSm+C7NoCayxqxGWz2NV7sbNlN7Uass0V3r/P/dDKSubr8M0JggeBU+ct7Gk6Z/FcpMyMtp17svH2xvx1UnidPnIpC4gHlDPhFK4AxnEWhUh01dPSxeN/CQ0C+jjt83qPdScEkHYG7JWApoLVRSE72zkZ/Byp4gPkQhI5ionhoVOibCbtNq/dgFhv+ihTG8NYiyewLOqBbYyz7nuYRHPIaFo2eT1idn+AfjQdlF37+OTbmI0xXN1DF9LjfYF4WSavPBrHH23WciFr6h4i7FedHzmXu4l6dLuUM9ab6DTGqZgeq1S2i4ouvTGCXc77ad3/FFM4qKVA2LtJXAhzcT3fA5D5xXcsHn9ymUQK2X9OrmojT1dgyLx50UVGCOP0bf+D5WGYQT8/SCQ8XE8wDCiOLXYB3bWtGIThxO1AAAAAElFTkSuQmCC"
+                alt="Star"
+                width="18"
+                height="18"
+              />
+            </li>
+            <li class="hero-list-item">
+              <p class="hero-item-text">Updated Mar 18, 2026</p>
+              <img
+                class="hero-star-img"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAgBJREFUeAHtU81PE0EcfdOv7baFpUTRelE0GCXGEEnUxkQ5+w949MZJo1dPxoM3NcSD6EGv3r1w8GakZI1epKEEQggQoOFz2Xa72e7uDLOlH8OWLpwJ7zTzm3lv3u/NDHCGAISmnedscQFspnydevMTkYIWfxafjEXtv2BxQDLnSF6/4/AywTEI3FCoPmSx9SlAtpsWLPmePphUe/iMdeJFOi18+5N9FKIMIWqDCnXJVLsLRr8LZ7u8ZUTViJz8nU0vv+VLTqDTzDASE+obXSm+C7NoCayxqxGWz2NV7sbNlN7Uass0V3r/P/dDKSubr8M0JggeBU+ct7Gk6Z/FcpMyMtp17svH2xvx1UnidPnIpC4gHlDPhFK4AxnEWhUh01dPSxeN/CQ0C+jjt83qPdScEkHYG7JWApoLVRSE72zkZ/Byp4gPkQhI5ionhoVOibCbtNq/dgFhv+ihTG8NYiyewLOqBbYyz7nuYRHPIaFo2eT1idn+AfjQdlF37+OTbmI0xXN1DF9LjfYF4WSavPBrHH23WciFr6h4i7FedHzmXu4l6dLuUM9ab6DTGqZgeq1S2i4ouvTGCXc77ad3/FFM4qKVA2LtJXAhzcT3fA5D5xXcsHn9ymUQK2X9OrmojT1dgyLx50UVGCOP0bf+D5WGYQT8/SCQ8XE8wDCiOLXYB3bWtGIThxO1AAAAAElFTkSuQmCC"
+                alt="Star"
+                width="18"
+                height="18"
+              />
+            </li>
+            <li class="hero-list-item">
+              <p class="hero-item-text">Android 7.0+</p>
+              <img
+                class="hero-star-img"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAOdEVYdFNvZnR3YXJlAEZpZ21hnrGWYwAAAgBJREFUeAHtU81PE0EcfdOv7baFpUTRelE0GCXGEEnUxkQ5+w949MZJo1dPxoM3NcSD6EGv3r1w8GakZI1epKEEQggQoOFz2Xa72e7uDLOlH8OWLpwJ7zTzm3lv3u/NDHCGAISmnedscQFspnydevMTkYIWfxafjEXtv2BxQDLnSF6/4/AywTEI3FCoPmSx9SlAtpsWLPmePphUe/iMdeJFOi18+5N9FKIMIWqDCnXJVLsLRr8LZ7u8ZUTViJz8nU0vv+VLTqDTzDASE+obXSm+C7NoCayxqxGWz2NV7sbNlN7Uass0V3r/P/dDKSubr8M0JggeBU+ct7Gk6Z/FcpMyMtp17svH2xvx1UnidPnIpC4gHlDPhFK4AxnEWhUh01dPSxeN/CQ0C+jjt83qPdScEkHYG7JWApoLVRSE72zkZ/Byp4gPkQhI5ionhoVOibCbtNq/dgFhv+ihTG8NYiyewLOqBbYyz7nuYRHPIaFo2eT1idn+AfjQdlF37+OTbmI0xXN1DF9LjfYF4WSavPBrHH23WciFr6h4i7FedHzmXu4l6dLuUM9ab6DTGqZgeq1S2i4ouvTGCXc77ad3/FFM4qKVA2LtJXAhzcT3fA5D5xXcsHn9ymUQK2X9OrmojT1dgyLx50UVGCOP0bf+D5WGYQT8/SCQ8XE8wDCiOLXYB3bWtGIThxO1AAAAAElFTkSuQmCC"
+                alt="Star"
+                width="18"
+                height="18"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section about-section" id="about">
+  <div class="about-bg-wrapper">
+    <div class="container about-container">
+      <h2 class="section-title about-title">About the Game</h2>
+      <p class="section-subtitle about-subtitle">
+        A Garden World Built Around Small Joys
+      </p>
+      <div class="about-content-wrapper">
+        <picture>
+          <source
+            srcset="/northgrove/assets/about-img-desk-c1299b17.png "
+            media="(min-width: 1440px)"
+            width="608"
+            height="340" />
+          <source
+            srcset="/northgrove/assets/about-img-mob-4f5d3e03.png "
+            width="343"
+            height="340" />
+          <img
+            class="about-img"
+            src="/northgrove/assets/about-img-mob-4f5d3e03.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="340"
+            loading="lazy"
+        /></picture>
+        <p class="about-text">
+          So Grove Plot basically takes your typical match-3 setup but drops it
+          into this world that actually feels warm and lived-in. Instead of
+          abstract icons and flat boards, you work with apples, blueberries,
+          lemons, and flowers that look like they belong in the world around
+          them. It's not just throwing levels at you - it's giving you an actual
+          place to be in.<br />
+          And honestly? That's what stuck with me. You are not only solving
+          puzzles but moving through a gentle landscape that feels handcrafted,
+          bright, and easy to return to. The adorable wolf companion adds even
+          more personality, making the whole experience feel friendlier and more
+          grounded.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="gameplay-section section" id="gameplay">
+  <div class="gameplay-section-wrapper">
+    <div class="container gameplay-container">
+      <h2 class="section-title gameplay-title">Gameplay</h2>
+      <p class="section-subtitle gameplay-subtitle">
+        Simple Matches, Satisfying Results
+      </p>
+      <div class="gameplay-text-wrapper">
+        <p class="gameplay-text">
+          Look, Grove Plot's pretty straightforward at its core. Match three or
+          more pieces of the same type to clear them from the board and move
+          closer to your level goals. But the game becomes more interesting as
+          missions begin to vary and the board asks for smarter choices.
+        </p>
+        <p class="gameplay-text">
+          Some levels reward quick observation. Others ask for patience, better
+          sequencing, and careful use of power-ups. That's when the game really
+          clicks - it finds this sweet spot between easy and challenging. It
+          stays accessible, but it never feels empty.
+        </p>
+      </div>
+      <p class="gameplay-list-text">Gameplay highlights</p>
+      <ul class="gameplay-list">
+        <li class="gameplay-list-item">
+          <p class="gameplay-item-text">Match fruits and flowers</p>
+          <img
+            class="gameplay-img"
+            src="/northgrove/assets/gameplay-img1-a52bcd20.png"
+            alt="Screenshot of the game"
+            width="80"
+            height="80"
+          />
+        </li>
+        <li class="gameplay-list-item">
+          <p class="gameplay-item-text">Complete collection goals</p>
+          <img
+            class="gameplay-img"
+            src="/northgrove/assets/gameplay-img2-b827741e.png"
+            alt="Screenshot of the game"
+            width="80"
+            height="80"
+          />
+        </li>
+        <li class="gameplay-list-item">
+          <p class="gameplay-item-text">Trigger chain reactions</p>
+          <img
+            class="gameplay-img"
+            src="/northgrove/assets/gameplay-img3-b392f5ad.png"
+            alt="Screenshot of the game"
+            width="80"
+            height="80"
+          />
+        </li>
+        <li class="gameplay-list-item">
+          <p class="gameplay-item-text">Use power-ups wisely</p>
+          <img
+            class="gameplay-img"
+            src="/northgrove/assets/gameplay-img4-3150ca38.png"
+            alt="Screenshot of the game"
+            width="80"
+            height="80"
+          />
+        </li>
+        <li class="gameplay-list-item">
+          <p class="gameplay-item-text">Earn stars and progress forward</p>
+          <img
+            class="gameplay-img"
+            src="/northgrove/assets/gameplay-img5-2c9b2c4b.png"
+            alt="Screenshot of the game"
+            width="80"
+            height="80"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      <section class="section locations-section" id="locations">
+  <div class="locations-bg-wrapper">
+    <div class="container locations-container">
+      <div class="locations-title-wrapper">
+        <h2 class="section-title locations-title">The Journey Map</h2>
+        <p class="section-subtitle locations-subtitle">
+          Follow the Path Through a Living Landscape
+        </p>
+      </div>
+      <div class="locations-content-wrapper">
+        <p class="locations-text">
+          The progress feels better because you're moving through this actual
+          map instead of just a boring level menu You move through winding
+          roads, green spaces, ponds, and little countryside details that make
+          each step feel connected to the last one.<br />
+          It makes the whole thing feel more like you're actually going
+          somewhere, discovering stuff. Unlocking a new area feels less like
+          opening another screen and more like continuing a quiet adventure. You
+          get into this nice flow of solving puzzles and then seeing what's next
+          on the map
+        </p>
+        <picture>
+          <source
+            srcset="/northgrove/assets/locations-img-desk-2647426f.png "
+            media="(min-width: 1440px)"
+            width="426"
+            height="436" />
+          <source
+            srcset="/northgrove/assets/locations-img-mob-f0e87e6f.png "
+            width="343"
+            height="436" />
+          <img
+            class="locations-img"
+            src="/northgrove/assets/locations-img-mob-f0e87e6f.png"
+            alt="Screenshot of the game"
+            width="343"
+            height="436"
+            loading="lazy"
+        /></picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="features-section section" id="features">
+  <div class="features-bg-wrapper">
+    <div class="container features-container">
+      <h2 class="section-title features-title">Features</h2>
+      <p class="section-subtitle features-subtitle">
+        Why Grove Plot Feels So Easy to Stay With
+      </p>
+      <p class="features-text">
+        I've played tons of puzzle games that are fun for a bit, but Grove Plot?
+        There's something softer about it that keeps pulling me back. The
+        visuals are bright without becoming overwhelming. The sound design
+        supports the mood instead of fighting for attention. And the progression
+        keeps giving you just enough to stay curious.
+      </p>
+      <div class="features-swiper-container">
+        <ul class="swiper-wrapper features-swiper-wrapper">
+          <li class="swiper-slide features-slide">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/northgrove/assets/sprite-f8102b43.svg#icon-features1"></use>
+            </svg>
+            <p class="features-item-text">Classic match-3 puzzle gameplay</p>
+          </li>
+          <li class="swiper-slide features-slide">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/northgrove/assets/sprite-f8102b43.svg#icon-features2"></use>
+            </svg>
+            <p class="features-item-text">
+              Colorful fruits and blooming flowers
+            </p>
+          </li>
+          <li class="swiper-slide features-slide">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/northgrove/assets/sprite-f8102b43.svg#icon-features3"></use>
+            </svg>
+            <p class="features-item-text">
+              Relaxing visual style and sound design
+            </p>
+          </li>
+          <li class="swiper-slide features-slide">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/northgrove/assets/sprite-f8102b43.svg#icon-features4"></use>
+            </svg>
+            <p class="features-item-text">
+              Power-ups with explosive combo effects
+            </p>
+          </li>
+          <li class="swiper-slide features-slide">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/northgrove/assets/sprite-f8102b43.svg#icon-features5"></use>
+            </svg>
+            <p class="features-item-text">Star-based completion system</p>
+          </li>
+          <li class="swiper-slide features-slide">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/northgrove/assets/sprite-f8102b43.svg#icon-features6"></use>
+            </svg>
+            <p class="features-item-text">
+              Scenic map progression with unlockable areas
+            </p>
+          </li>
+          <li class="swiper-slide features-slide">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/northgrove/assets/sprite-f8102b43.svg#icon-features7"></use>
+            </svg>
+            <p class="features-item-text">Charming wolf companion</p>
+          </li>
+          <li class="swiper-slide features-slide">
+            <svg class="features-icon" width="24" height="24">
+              <use href="/northgrove/assets/sprite-f8102b43.svg#icon-features8"></use>
+            </svg>
+            <p class="features-item-text">Gradually increasing challenge</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section faq-section" id="faq">
+  <div class="faq-bg-wrapper">
+    <div class="container faq-container">
+      <p class="section-subtitle faq-subtitle">Frequently Asked Questions</p>
+      <ul class="faq-list">
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">What type of game is Grove Plot?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="32" height="32">
+                  <use href="/northgrove/assets/sprite-f8102b43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              Grove Plot is a casual match-3 puzzle game set in a bright and
+              relaxing garden world. Players match fruits and flowers to
+              complete level objectives and unlock new parts of the map. The
+              gameplay is easy to understand, but the levels gradually become
+              more strategic. They really got that balance right - chill but
+              still gives you those 'yes!' moments That makes it a strong fit
+              for players who enjoy puzzles without unnecessary complexity.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">Is Grove Plot beginner-friendly?</span>
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="32" height="32">
+                  <use href="/northgrove/assets/sprite-f8102b43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              Yes, the game is very easy to start. The first levels introduce
+              the main mechanics in a smooth and natural way, so new players can
+              learn without feeling lost. As you continue, new challenges appear
+              little by little. This keeps the experience approachable while
+              still giving it room to grow. It is simple enough for casual play
+              but still engaging over time.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text"
+                >What makes Grove Plot different from other match-3 games?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="32" height="32">
+                  <use href="/northgrove/assets/sprite-f8102b43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              What sets it apart? The whole vibe, really. It feels like you're
+              wandering through an actual garden instead of just clicking
+              through random puzzle screens. The map, the colors, the wolf
+              companion, and the soft visual style all help create a more
+              welcoming experience. It also balances calm gameplay with
+              satisfying combo moments. All of it together just gives you this
+              nice feeling that sticks around.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">
+                Are there power-ups and combo effects?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="32" height="32">
+                  <use href="/northgrove/assets/sprite-f8102b43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              Yes, power-ups are an important part of the experience. As you
+              progress, you unlock tools and effects that can clear bigger parts
+              of the board and create strong chain reactions. These moments make
+              the gameplay feel more exciting without losing its relaxed tone.
+              They also add a layer of strategy to more difficult levels. Used
+              well, they can completely change the outcome of a puzzle.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">
+                Is the game only about matching pieces?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="32" height="32">
+                  <use href="/northgrove/assets/sprite-f8102b43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              Not really. Matching is the main mechanic, but the game also
+              focuses on progression, level goals, and the feeling of moving
+              through a larger world. Each level has its own purpose, and the
+              changing objectives keep things from becoming repetitive. The map
+              system makes advancement feel more meaningful. So while the
+              controls stay simple, the overall experience feels fuller than a
+              basic puzzle loop.
+            </p>
+          </div>
+        </li>
+        <li class="faq-list-item">
+          <div class="faq-item-question-wrapper">
+            <button class="faq-top-text-btn">
+              <span class="faq-btn-text">
+                Can I play Grove Plot in short sessions?</span
+              >
+              <span class="faq-toggle-symbol"
+                ><svg class="faq-icon" width="32" height="32">
+                  <use href="/northgrove/assets/sprite-f8102b43.svg#icon-caret"></use></svg
+              ></span>
+            </button>
+          </div>
+          <div class="faq-item-answer-wrapper">
+            <p class="faq-bottom-text">
+              Yes, that is one of its strengths. Levels are easy to fit into
+              short breaks, which makes the game ideal for casual daily play. At
+              the same time, the steady progression can keep you playing longer
+              when you want to stay with it. It works well whether you have five
+              minutes or much more. That flexibility is a big part of its charm.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer" id="footer">
+  <div class="container footer-container">
+    <div class="footer-content-wrapper">
+      <a class="footer-logo-link" href="./">
+        <img
+          class="header-logo-img"
+          src="/northgrove/assets/header-logo-9eebbe16.png"
+          alt="Logo"
+          width="40"
+          height="40"
+        />
+        <span class="footer-logo-text">Grove Plot</span></a
+      >
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="footer-list-item">
+            <a class="footer-link" href="./privacy-policy.html"
+              >Privacy Policy</a
+            >
+          </li>
+          <li class="footer-list-item">
+            <a class="footer-link" href="./terms-and-conditions.html"
+              >Terms and Conditions</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <p class="footer-text">© 2026 northgrove.pro — All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+
+    
+  </body>
+</html>
